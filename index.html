@@ -89,7 +89,7 @@
                 count += 1
             }
             bpm = count / sum
-            bpmDiv.innerText = `${bpm}`
+            bpmDiv.innerText = `${Math.round(bpm)}`
         }
 
         function reset() {
