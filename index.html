@@ -41,7 +41,7 @@
   <body>
     <main>
         <div style="font-weight: bold; padding: 0.5rem 0;">
-        v1.0.2
+        v1.0.3
         </div>
         <div>
             <div style="">
@@ -62,8 +62,8 @@
         const bpmDiv = document.getElementById("bpm")
         let diffMins = []
 
-        let t1 = 0
-        let t2 = 0
+        let t1 = null
+        let t2 = null
         let bpm = 0
 
 
@@ -97,8 +97,8 @@
 
         function reset() {
             diffMins = []
-            t1 = new Date()
-                t2 = new Date()
+            t1 = null
+            t2 = null
             bpmDiv.innerText = `...`
         }
     </script>
