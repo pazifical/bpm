@@ -31,6 +31,7 @@
             font-size: 4rem;
             font-weight: bold;
             width: 100%;
+            transition: 100ms;
         }
         button:active {
             background-color: white;
@@ -88,7 +89,7 @@
                 count += 1
             }
             bpm = count / sum
-            bpmDiv.innerText = `${Math.round(bpm)}`
+            bpmDiv.innerText = `${Math.round(bpm * 10) / 10}`
         }
 
         function reset() {
